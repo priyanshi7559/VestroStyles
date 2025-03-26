@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestra Styles - Fashion Redefined</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #ff4d6d;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #d63047;
+        }
+
+        /* Fashion Categories */
+        .fashion-categories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .category {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+        }
+
+        .category img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .category h2 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+
+        .category p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+            background: #fff;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .fashion-categories {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .category {
+                width: 90%;
+            }
+        }
+    </style>
+</head>i
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <img src="https://unsplash.com/photos/8IKf54pc3qk/download?force=true&w=1920" alt="Fashion Model">
+        <div class="hero-content">
+            <h1>Welcome to Vestra Styles</h1>
+            <p>Experience the future of fashion with premium and bespoke designs.</p>
+            <a href="#shop" class="btn">Explore Collection</a>
+        </div>
+    </header>
+
+    <!-- Fashion Categories -->
+    <section class="fashion-categories" id="shop">
+        <div class="category">
+            <img src="https://unsplash.com/photos/aHm10GVjiPg/download?force=true&w=800" alt="Premium Coats">
+            <h2>Premium Coats</h2>
+            <p>Experience warmth and elegance like never before.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        
+        <div class="category">
+            <img src="https://unsplash.com/photos/1Z2niiBPg5A/download?force=true&w=800" alt="Bespoke Custom Suits">
+            <h2>Bespoke Custom Suits</h2>
+            <p>Tailored to perfection for every occasion.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        
+        <div class="category">
+            <img src="https://unsplash.com/photos/1SAnrIxw5OY/download?force=true&w=800" alt="Summer Dresses">
+            <h2>Summer Dresses</h2>
+            <p>Stay stylish and comfortable this summer.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>At Vestra Styles, we redefine fashion with high-quality materials and innovative designs. Our mission is to make luxury fashion accessible to everyone.</p>
+    </section>
+
+</body>
+</html>
+
